@@ -1,0 +1,156 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header{
+  width: 100%;
+  height: 15vh;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+   text-align: center;
+   min-height: 80px;
+}
+
+.links{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  width: 50vw;
+}
+
+.links >*{
+  color: white;
+  font-size: 8px;
+  margin: 0.5%;
+  margin-left: 3%;
+  margin-top: auto;
+  text-decoration: none;
+
+}
+
+.img{
+  width: 60px;
+  height: 40px;
+  margin-top: auto;
+}
+.logo{
+  font-size: 25px;
+  width: 25vw;
+  color: white;
+  text-align: center;
+  align-items: center;
+  margin-top: auto;
+}
+
+.logo :hover{
+  cursor: pointer;
+}
+
+.card{
+  width: 250px;
+  height: 360px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  text-align: center;
+  margin: 2%;
+  
+}
+
+.card >img{
+  width:  100%;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.main{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 3%;
+}
+
+.product{
+  padding: 2%;
+  text-align: center;
+}
+.product >img{
+  width: 40%;
+}
+button{
+  margin: 1%;
+}
+
+.btn{
+  background-color: white;
+  border-radius: 5px;
+  margin-top: auto;
+}
+
+.newprod{
+  text-align: center;
+  padding: 5%;
+}
+
+.add{
+  border: none;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  z-index: 999;
+  align-items: center;
+  margin-left: -95%;
+  background-color: white;
+}
+
+.sort{
+  margin-top: auto;
+  padding: 1%;
+}
+.sort >select{
+  width: 150px;
+  border-radius: 5px;
+}
+
+.none{
+  display: none;
+}
+.show{
+  display: inline;
+}
+.cart{
+  width: 40vw;
+  height: auto;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 1px solid;
+  border-radius: 10px;
+  margin: 5% 30%;
+  
+}
+
+.cart >button{
+  width: 30%;
+  margin-left: 35%;
+  
+}
+
+.minimg{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}

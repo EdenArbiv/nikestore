@@ -1,0 +1,64 @@
+-- create database nike;
+
+-- use nike;
+
+-- create table category(
+-- id int auto_increment,
+-- type varchar(30),
+-- gender varchar(10),
+-- primary key(id)
+-- );
+
+-- create table products(
+-- id int auto_increment,
+-- name varchar(50),
+-- price int, 
+-- img varchar(200),
+-- category_id int,
+-- qt int default 0,
+-- primary key(id),
+-- foreign key(category_id) references category(id)
+-- );
+
+-- create table branches(
+-- id int auto_increment,
+-- location varchar(30),
+-- address varchar(100),
+-- number varchar(100),
+-- open varchar(50),
+-- img varchar(200),
+-- primary key(id)
+-- );
+
+
+-- insert into category(type, gender)
+-- values("clothes", "male"),
+-- ("clothes", "female"),
+-- ("shoes", "male"),
+-- ("shoes", "female"),
+-- ("accessories", "male"),
+-- ("accessories", "female");
+
+
+-- insert into branches(location,address , number, open, img)
+-- values("Big Eliat Nike Factory Store", "Ha-Stat St. 20 Eilat, 88000, IL", "050-8137644",  "09:30 AM - 08:30 PM", "https://bezol.net/wp-content/uploads/2019/12/structure-night-city-urban-shop-store-933663-pxhere.com_.jpg"),
+-- ("Bilu Nike Factory Store", "Bilu center Neot Avivim Unit 14, 76920, IL", "050-8006789",  "10:00 AM - 10:30 PM", "https://bezol.net/wp-content/uploads/2019/12/structure-night-city-urban-shop-store-933663-pxhere.com_.jpg"),
+-- ("Holon Nike Factory Store", "38 Merkava Holon, 5885936, IL", "050-0099924", "09:00 AM - 09:30 PM", "https://bezol.net/wp-content/uploads/2019/12/structure-night-city-urban-shop-store-933663-pxhere.com_.jpg"),
+-- ("Nike Clearance Store Krayot", "Big Krayot Ha'Histadrut Ave 248 Haifa, 2629710, IL", "050-2235900", "09:00 AM - 09:30 PM", "https://bezol.net/wp-content/uploads/2019/12/structure-night-city-urban-shop-store-933663-pxhere.com_.jpg"),
+-- ("Nike Factory Store Zichron", "Highway 4, Western Industrial Zone Zichron Yaakov, 3091118, IL", "050-6030705", "09:00 AM - 09:30 PM", "https://bezol.net/wp-content/uploads/2019/12/structure-night-city-urban-shop-store-933663-pxhere.com_.jpg"),
+-- ("NSP Ashdod Star", "44 ZABUTINSKI ST. Star Center ASHDOD, 77219, IL", "08-8560402", "08:30 AM - 08:30 PM", "https://bezol.net/wp-content/uploads/2019/12/structure-night-city-urban-shop-store-933663-pxhere.com_.jpg"),
+-- ("Jerusalem Nike Factory Store", "Pierre Koenig 27 Talpiot Jerusalem, 93469, IL", "053-4479000", "10:00 AM - 10:00 PM", "https://bezol.net/wp-content/uploads/2019/12/structure-night-city-urban-shop-store-933663-pxhere.com_.jpg");
+
+-- insert into products(name, price, img, category_id)
+-- values("Nike Glide FlyEase",529.90, "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/69a2d793-e220-456d-8c67-c9b2396be6ae/glide-flyease-shoes-dwNnG0.png", 3),
+-- ("Women's Air Force 1 Sculpt",579.90, "https://static.nike.com/a/images/t_prod_ss/w_640,c_limit,f_auto/f7f1f601-77f3-4f94-b4e2-c5012eeac4c7/women-s-air-force-1-sculpt-sail-dc3590-102-release-date.jpg", 4),
+-- ("Air Jordan 11",799.90 , "https://static.nike.com/a/images/t_prod_ss/w_640,c_limit,f_auto/ac66b4cc-3e1b-4744-b1b0-9116b29c0711/air-jordan-11-cool-grey-ct8012-005-release-date.jpg", 3),
+-- ("Air Jordan 11 Retro",799.90, "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/7a535f8a-91d4-46c2-bf44-96ae8a820468/air-jordan-11-retro-shoes-LXsdVn.png", 4),
+-- ("Nike Sportswear Tech Fleece Windrunner",439.90, "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/d948def6-330b-4222-b9fe-db917024cf85/sportswear-tech-fleece-windrunner-hoodie-3Jck4N.png", 2),
+-- ("Nike Therma-FIT",429.90, "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/83aad142-dc6a-4dd9-8e88-449b3f0c0ccc/synthetic-fill-running-jacket-kdvD3z.png", 2),
+-- ("Jordan Jumpman",309.90, "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/899806ed-a3a5-4cda-b926-f4529ce2b076/jordan-jumpman-fleece-pullover-hoodie-cbLx1t.png", 1),
+-- ("Nike Storm-FIT ADV Run Division",1159.90, "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/f18aee0d-4121-4ebb-bfeb-4b9d6b330924/adv-run-division-running-jacket-7fM6F0.png", 1),
+-- ("Nike Sportswear Heritage 86",84.90, "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/11b883b7-f133-4165-ba3e-2c123be6e25f/sportswear-heritage-86-adjustable-cap-vekVg3.png", 5),
+-- ("Nike Sportswear",89.90, "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/25192e6f-83d5-4c58-8b98-01f1659e9a90/sportswear-futura-365-cross-body-bag-VL10Xv.png", 6),
+-- ("Nike Sportswear Futura Luxe",299.90, "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/6c6c6267-d402-4b96-b4b3-c957b98b09d6/sportswear-futura-luxe-tote-7c904R.png", 6),
+-- ("Jordan",114.90, "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/78ea2033-cd65-4c78-bf62-6d48d47d2f1d/jordan-cuffed-beanie-hgnZGD.png", 5)
